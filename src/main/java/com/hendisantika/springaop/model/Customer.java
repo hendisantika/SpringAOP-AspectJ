@@ -11,7 +11,6 @@ package com.hendisantika.springaop.model;
  * To change this template use File | Settings | File Templates.
  */
 
-
 public class Customer {
     private long id;
     private String firstName;
