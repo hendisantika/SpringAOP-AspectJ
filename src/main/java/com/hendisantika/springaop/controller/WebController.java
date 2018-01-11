@@ -33,8 +33,8 @@ public class WebController {
         String result = "";
 
         result += service.getCustomerById(1).getFirstName() + "<br/>";
-        result += service.setCustomerFirstName("Peter", 1) + "<br/>";
-        result += service.setCustomerLastName("Levin", 2);
+        result += service.setCustomerFirstName("Kakashi", 1) + "<br/>";
+        result += service.setCustomerLastName("Minato", 2);
 
         return result;
     }
@@ -43,7 +43,7 @@ public class WebController {
     public String pointcutAspect() {
         String result = "";
 
-        result += anotherService.findCustomerByLastName("Smith") + "<br/>";
+        result += anotherService.findCustomerByLastName("Madara") + "<br/>";
         result += anotherService.findAllCustomers();
 
         return result;
@@ -53,7 +53,7 @@ public class WebController {
     public String joinpointAspect() {
         String result = "";
 
-        result += advanceService.setCustomerFirstName("Peter", 1) + "<br/>";
+        result += advanceService.setCustomerFirstName("Gaara", 1) + "<br/>";
         result += advanceService.findAllCustomers();
 
         return result;
